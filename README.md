@@ -2,6 +2,8 @@
 
 A modern and responsive landing page developed for the Mani Protein brand, focused on product presentation, clean layout, and structured front-end development.
 
+![Project Preview](./preview.png)
+
 ## 🚀 Technologies
 - HTML5
 - CSS3
