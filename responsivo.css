@@ -1,0 +1,187 @@
+/* ============================= */
+/* RESPONSIVIDADE - TABLET & CELULAR */
+/* ============================= */
+
+/* ============================= */
+/* TABLET (768px a 1024px) */
+/* ============================= */
+@media screen and (max-width: 1024px) {
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 100px 20px 40px;
+    text-align: center;
+    justify-items: center; /* centraliza conteúdo dentro do grid */
+  }
+
+  .hero-conteudo {
+    padding: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centraliza no eixo X */
+  }
+
+  .hero-titulo {
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    text-align: center;
+  }
+
+  .hero-subtitulo {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .hero-texto {
+    font-size: 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero-acoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero-imagem img {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 15px 30px rgba(0,0,0,0.35));
+  }
+
+  .inovacao-cards,
+  .diferencial-cards {
+    display: grid;
+    justify-items: center; /* centraliza cards */
+    gap: 25px;
+  }
+
+  .equipe-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+  }
+}
+
+/* ============================= */
+/* CELULAR (até 767px) */
+/* ============================= */
+@media screen and (max-width: 767px) {
+
+  body {
+    padding-top: 80px;
+  }
+
+  .cabecalho {
+    width: calc(100% - 20px);
+    padding: 0 15px;
+    height: 60px;
+  }
+
+  .menu {
+    gap: 15px;
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 80px 15px 30px;
+    text-align: center;
+    justify-items: center;
+  }
+
+  .hero-imagem img {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 15px 30px rgba(0,0,0,0.35));
+  }
+
+  .hero-conteudo {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-titulo {
+    font-size: clamp(2rem, 8vw, 3rem);
+    text-align: center;
+  }
+
+  .hero-subtitulo {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .hero-texto {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .hero-acoes {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .hero-button {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .inovacao-cards,
+  .diferencial-cards {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 20px;
+  }
+
+  .equipe-container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 20px;
+    padding: 30px 10px;
+  }
+
+  .foto-perfil {
+    width: 140px;
+    height: 140px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .titulo {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .contato {
+    margin: 80px 15px;
+    padding: 30px 20px 60px;
+    text-align: center;
+  }
+
+  .formulario-contato {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .campo-form {
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .botao-form {
+    font-size: 0.95rem;
+    padding: 12px 20px;
+  }
+}
